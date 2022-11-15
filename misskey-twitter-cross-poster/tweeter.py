@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_notes():
-    since = datetime.now() - timedelta(hours=1)
+    since = datetime.now() - timedelta(minutes=15)
 
     url = os.getenv("MISSKEY_BASE_URL") + "/api/users/notes"
     resp = requests.post(
